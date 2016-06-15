@@ -1,0 +1,179 @@
+@charset "utf-8";
+
+#quanly {
+	background-color: #DDEAF3;
+	clear: right;
+	float: left;
+	width: 25%;
+	height: 500px;
+}
+
+#tindang {
+	width: 72%;
+	height: 500px;
+	float: right;
+	margin-bottom: 20px;
+}
+
+#quanly #ql_tin {
+	width: 80.5%;
+	hight: auto;
+	position: relative;
+	display: inline-block;
+	font-family: "Times New Roman", Times, serif;
+	font-size: 16px;
+	font-weight: bold;
+	color: #000;
+	margin-bottom: 0px;
+}
+
+#quanly #ql_tin #lienhe {
+	width: 113%;
+	line-height: 1.8;
+	list-style-type: circle;
+	margin: 18px 0 0 11px;
+	font-size: 14px;
+}
+
+#quanly #ql_tin ul li a:hover {
+	background-image:
+		url("../img/image_interface/templatemo_menu_hover.png");
+	color: #032730;
+	margin-left: 10px;
+}
+
+#quanly #ql_tin #qtrivien li a:hover {
+	background-image:
+		url("../img/image_interface/templatemo_menu_hover.png");
+	color: #032730;
+	margin-left: 10px;
+}
+
+#quanly #ql_tin #text {
+	background-color: #0CF;
+	height: 27px;
+	/* width: 100%; */
+	width: 100%;
+	background-color: #032730;
+	font-family: "Times New Roman", Times, serif;
+	font-size: 16px;
+	font-style: normal;
+	font-weight: bolder;
+	color: #FFF;
+	padding-top: 7px;
+	padding-left: 50px;
+	border-width: thin;
+	border-bottom-style: solid;
+	border-color: #FFF;
+	border-top-left-radius: 5px;
+	border-top-right-radius: 5px;
+}
+
+#quanly #ql_tin #text_qtri {
+	background-color: #0CF;
+	height: 27px;
+	width: 100%;
+	background-color: #032730;
+	font-family: "Times New Roman", Times, serif;
+	font-size: 16px;
+	font-style: normal;
+	font-weight: bolder;
+	color: #FFF;
+	padding-top: 7px;
+	padding-left: 50px;
+	border-width: thin;
+	border-bottom-style: solid;
+	border-top-color: #FFF;
+	border-right-color: #FFF;
+	border-bottom-color: #FFF;
+	border-left-color: #FFF;
+	border-top-left-radius: 5px;
+	border-top-right-radius: 5px;
+}
+
+#quanly #ql_tin ul {
+	text-decoration: none;
+	background-image: none;
+	border-top-style: none;
+	border-right-style: none;
+	border-bottom-style: solid;
+	border-left-style: none;
+	font-family: "Times New Roman", Times, serif;
+	font-size: 14px;
+	font-weight: bold;
+	color: #000;
+	padding-left: 70px;
+	background-color: #DDEAF3;
+	height: 100%;
+	margin-top: 0px;
+	margin-bottom: 0px;
+	margin-right: -50px;
+	padding-right: 0px;
+	border-bottom-width: thin;
+	border-bottom-color: #FFF;
+	padding-top: 5px;
+}
+
+#quanly #ql_tin #qtrivien {
+	border-bottom-style: solid;
+	border-left-style: none;
+	font-family: "Times New Roman", Times, serif;
+	font-size: 14px;
+	font-weight: bold;
+	color: #000;
+	padding-left: 50px;
+	background-color: #DDEAF3;
+	height: 100%;
+	margin-top: 0px;
+	margin-bottom: 0px;
+	margin-right: -50px;
+	padding-right: 0px;
+	border-bottom-width: thin;
+	border-bottom-color: #FFF;
+	padding-top: 5px;
+}
+
+#quanly #ql_tin #qtrivien li {
+	background-color: #DDEAF3;
+	list-style-type: circle;
+	margin-bottom: 10px;
+	margin-top: 10px;
+	font-size: 16px;
+}
+
+#quanly #ql_tin ul li {
+	text-decoration: none;
+	background-image: none;
+	border-style: none;
+	list-style-image: none;
+	list-style-type: circle;
+	font-size: 16px;
+	margin-top: 8px;
+}
+
+#quanly #ql_tin #qtrivien li a {
+	font-family: "Times New Roman", Times, serif;
+	font-size: 16px;
+	font-weight: bold;
+	color: #000;
+}
+
+#quanly #ql_tin ul li ul {
+	height: auto;
+	width: auto;
+	margin-right: 30px;
+	margin-left: -50px;
+	list-style-type: square;
+}
+
+#quanly #ql_tin ul li ul li {
+	list-style-type: disc;
+}
+
+#quanly #ql_tin ul li ul li a {
+	font-family: "Times New Roman", Times, serif;
+	font-size: 16px;
+	font-weight: bold;
+	color: #000;
+	text-decoration: none;
+}
