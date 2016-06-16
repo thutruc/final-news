@@ -20,8 +20,8 @@ public class DAONews extends DAO<News, Long> {
 	}
 	public static void main(String[] args) throws DAOException {
 		java.sql.Date d = new java.sql.Date(2016, 6, 14);
-		News n = new News("title1", "img1", "content1", d, "type1");
+//		News n = new News("nội dung 1", "hình 1", "tiêu đề 1", d, "loại 1");
 		DAONews dao = new DAONews(News.class);
-		dao.save(n);
+//		dao.save(n);
 	} 
 }

@@ -27,5 +27,6 @@
 		<mapping class="edu.news.model.Comment" />
 		<mapping class="edu.news.model.News" />
 		<mapping class="edu.news.model.Account" />
+		<mapping class="edu.news.model.Model" />
 	</session-factory>
 </hibernate-configuration>
