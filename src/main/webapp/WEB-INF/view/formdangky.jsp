@@ -7,6 +7,7 @@
 <title>Đăng ký</title>
 <link rel="stylesheet" type="text/css" href="${pageContext.request.contextPath}/resources/css/style_pagedif.css">
 <link rel="stylesheet" type="text/css" href="${pageContext.request.contextPath}/resources/css/style_form.css">
+<link href="${pageContext.request.contextPath}/resources/css/style_formdn.css" rel="stylesheet" type="text/css">
 <!-- start xuly thong tin dang ky-->
 <script type="text/javascript">
 	function checkmk() {
@@ -58,6 +59,7 @@
   
      </form-->
 	<!--start form dang ky -->
+	<div id="dangky">
 	<form id="formdangky" method="post">
 		<h2 align="center">THÔNG TIN ĐĂNG KÝ</h2>
 		<hr/>
@@ -80,34 +82,14 @@
 					class="ip" placeholder="Nhập lại mật khẩu" required="required"
 					onblur="checkmk()"></td>
 			</tr>
-			<!--tr>
-								<td class="title">Giới tính</td>
-								<td><input type="radio" name="sex" value="Nam" checked>Nam<input type="radio" name="sex" value="Nữ">Nữ</td>
-							</tr-->
+			
 			<tr>
 				<td class="title">Họ và tên<font style="color: #F00">*</font></td>
 				<td><input name="hoten" type="text" size="40" class="ip"
 					placeholder="Họ và tên" required></td>
 			</tr>
 
-			<!--tr>
-								<td class="title">Địa chỉ<font style="color: #F00">*</font></td>
-								<td><input name="diachi" type="text" id="textfield"
-									size="40" class="ip" placeholder="Địa chỉ nhà"
-									required="required"></td>
-							</tr-->
-			<!--tr>
-								<td class="title">Số điện thoại</td>
-								<td><input type="tel" name="sdt" size="40" class="ip"
-									placeholder="Mẫu: 0123456789" 
-	       required size="50" pattern="([0-9]{1}([0-9]{3})([0-9]{3})([0-9]{3,4}))"></td>
-							</tr-->
-			<!--tr>
-								<td class="title">Ngày sinh</td>
-								<td><input type="date" name="ngaySinh" class="ip"
-									required="required"></td>
-							</tr-->
-			<tr>
+			<!-- <tr>
 				<td class="title">Mã kiểm tra:</td>
 
 				<td class="capt_cha"></td>
@@ -116,7 +98,7 @@
 				<td class="title">Nhập mã kiểm tra:</td>
 				<td><input name="macaptcha" type="text" size="40" class="ip"
 					placeholder="Nhập mã kiểm tra tại đây!" required></td>
-			</tr>
+			</tr> -->
 			<tr>
 			</tr>
 		</table>
@@ -127,7 +109,7 @@
 		</div>
 	</form>
 	<!-- end form dang ky -->
-	<!-- </div> -->
+	 </div> 
 
 </body>
 </html>

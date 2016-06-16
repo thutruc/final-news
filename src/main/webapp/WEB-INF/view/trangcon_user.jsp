@@ -7,7 +7,7 @@
 <title>web tin giáo dục</title>
 <link rel="stylesheet" type="text/css" href="${pageContext.request.contextPath}/resources/css/style.css">
 <link rel="stylesheet" type="text/css" href="${pageContext.request.contextPath}/resources/css/style_trangcon.css">
-<script src="jquery/jquery-1.7.2.min.js">
+<script src="${pageContext.request.contextPath}/resources/jquery/jquery-1.7.2.min.js">
 	
 </script>
 </head>
@@ -60,16 +60,65 @@
 
 
 		<div id="center">
-			<div id="toptin" style="height: 365px;">
-				<%-- <jsp:include page="user_dangky.jsp"></jsp:include> --%>
-				<%-- <jsp:include page="user_hosocanhan.jsp"></jsp:include> --%>
-				<jsp:include page="user_trangchuyenmuc.jsp"></jsp:include>
+			<div id="toptin" style="height: 300px;">
+				<div id="videomain">
+					<video height="240" width="100%" controls
+						style="background: black; margin-bottom: 8px;">
+						<source src="${pageContext.request.contextPath}/resources/img/video/quychethiVNOTV.mp4" type="video/mp4">
+					</video>
+					<h4>Quy chế thi đại học, cao đẳng năm 2016</h4>
+				</div>
+
+				<div id="blogtin">
+					<p>
+						<a href="">Tin tuyển sinh quốc gia 2016</a>
+					</p>
+					<hr />
+					<p>
+						<a href="">Tin tuyển sinh quốc gia 2016</a>
+					</p>
+					<hr />
+					<p>
+						<a href="">Tin tuyển sinh quốc gia 2016</a>
+					</p>
+					<hr />
+					<p>
+						<a href="">Tin tuyển sinh quốc gia 2016 Tin tuyển sinh quốc
+							gia 2016 Tin tuyển sinh quốc gia 2016</a>
+					</p>
+					<hr />
+					<p>
+						<a href="">Tin tuyển sinh quốc gia 2016 </a>
+					</p>
+					<hr />
+					<p>
+						<a href="">Tin tuyển sinh quốc gia 2016</a>
+					</p>
+					<hr />
+					<p>
+						<a href="">Tin tuyển sinh quốc gia 2016</a>
+					</p>
+					<hr />
+					<p>
+						<a href="">Tin tuyển sinh quốc gia 2016</a>
+					</p>
+					<hr />
+					<p>
+						<a href="">Tin tuyển sinh quốc gia 2016</a>
+					</p>
+					<hr />
+					<p>
+						<a href="">Tin tuyển sinh quốc gia 2016</a>
+					</p>
+					<hr />
+				</div>
 			</div>
 			<!--end muc_admin nếu có-->
 			<div id="bangtin_chinh">
 				<!-- tin liên quan-->
 				<div id="tin_lienquan">
 					<jsp:include page="listtin_chuyenmuc.jsp"></jsp:include>
+
 				</div>
 				<!--end tin liên quan-->
 				<!--midle2_rights-->
@@ -84,7 +133,7 @@
 
 						<div id="listradio">
 							<div id="playradio">
-								<audio src="${pageContext.request.contextPath}/resources/${pageContext.request.contextPath}/resources/img/mp3/giaoduc120215.mp3" controls
+								<audio src="${pageContext.request.contextPath}/resources/img/mp3/giaoduc120215.mp3" controls
 									style="width: 186px; margin-left: 1px;" />
 							</div>
 							<marquee>
@@ -112,10 +161,10 @@
 					<!--end midle2_radio-->
 					<!--2 banner quảng cáo-->
 					<div id="quangcao">
-						<a href="#"><img src="${pageContext.request.contextPath}/resources/${pageContext.request.contextPath}/resources/img/image_hinhanh/qc1.jpg"></a>
+						<a href="#"><img src="${pageContext.request.contextPath}/resources/img/image_hinhanh/qc1.jpg"></a>
 					</div>
 					<div id="quangcao">
-						<a href="#"><img src="${pageContext.request.contextPath}/resources/${pageContext.request.contextPath}/resources/img/image_hinhanh/qc2.jpg"></a>
+						<a href="#"><img src="${pageContext.request.contextPath}/resources/img/image_hinhanh/qc2.jpg"></a>
 					</div>
 					<!--end 2 banner quảng cáo-->
 				</div>
@@ -128,9 +177,10 @@
 		<div id="footer">
 			<div class="footer1">
 				<form id="form_datcauhoi" action="" method="post">
-					<img alt="" src="${pageContext.request.contextPath}/resources/${pageContext.request.contextPath}/resources/img/image_interface/iconthu.png"
+					<img alt="" src="${pageContext.request.contextPath}/resources/img/image_interface/iconthu.png"
 						style="width: 40px; height: 40px; float: left; margin: 0px 0 -26px 10px;">
-					<p style="margin-bottom: -16px;text-align: center;">Hộp thư tư vấn</p>
+					<p style="margin-bottom: -16px; text-align: center;">Hộp thư tư
+						vấn</p>
 					<input type="text" name="email" maxlength="50" placeholder="Email"
 						class="in">
 					<textarea id="noidung" rows="33" cols="136"
@@ -147,34 +197,40 @@
 				</form>
 			</div>
 			<div class="footer1"
-				style="width: 35%; text-align: left; font-size: 0px;">
-				<p style="font-size: 14px;">© Địa chỉ liên hệ: Lạc Tánh-Tánh
+				style="width: 48%; text-align: left; font-size: 13px;">
+				<div style="width: 100%; height: 40px; color: #860f55;">
+					<a href="" style="color: #027087; font-weight: bold;">Trang
+						chủ&nbsp;</a> | &nbsp;<a href=""
+						style="color: #027087; font-weight: bold;">Hướng nghiệp</a>&nbsp;
+					| &nbsp;<a href="" style="color: #027087; font-weight: bold;">Góc
+						nhìn chuyên gia</a>&nbsp; | &nbsp;<a href=""
+						style="color: #027087; font-weight: bold;">Tâm lý</a>&nbsp; |
+					&nbsp;<a href="" style="color: #027087; font-weight: bold;">Đồng
+						hành cùng con</a>
+				</div>
+				<p style="font-size: 13px;">© Địa chỉ liên hệ: Lạc Tánh-Tánh
 					Linh- Bình Thuận</p>
-				</br>
-				<p style="margin-left: 17px; font-size: 14px;">Số điện thoại:
+				<p style="margin-left: 17px; font-size: 13px;">Số điện thoại:
 					(0623)880 924</p>
-				</br>
-				<p style="margin-left: 17px; font-size: 14px;">Email:
+				<p style="margin-left: 17px; font-size: 13px;">Email:
 					bichthietnguyen93@gmail.com</p>
-				</br>
-				<p style="margin-left: 17px; font-size: 14px;">Hotline:
+				<p style="margin-left: 17px; font-size: 13px;">Hotline:
 					0962968534</p>
 			</div>
 			<div class="footer1">
-				<p style="color: #032730; font-size: 16px;">CHỊU
+				<p style="color: #032730; font-size: 15px; margin-top: -5px;">CHỊU
 					TRÁCH NHIỆM BÀI VIẾT:</p>
 				<p style="font-size: 14px;">Nguyễn Thị Bích Thiệt</p>
 				<p style="font-size: 14px;">Nguyễn Thị Thu Trúc</p>
 				<p style="font-size: 14px;">Đỗ Thị Thu Thủy</p>
-				<img src="${pageContext.request.contextPath}/resources/${pageContext.request.contextPath}/resources/img/image_interface/templatemo_menu_hover2.png"
+				<img src="${pageContext.request.contextPath}/resources/img/image_interface/templatemo_menu_hover2.png"
 					style="width: 25px; height: 25px;"> <img
-					src="${pageContext.request.contextPath}/resources/${pageContext.request.contextPath}/resources/img/image_interface/templatemo_menu_hover.png"
+					src="${pageContext.request.contextPath}/resources/img/image_interface/templatemo_menu_hover.png"
 					style="width: 30px; height: 25px;">
 
 			</div>
 		</div>
 		<!--kết thúc footer-->
-
 		<!--gotop -->
 		<div id="go_top" title="Go top" style="display: block;">
 			<a href="#" id="go_top" style="display: inline;"> </a>

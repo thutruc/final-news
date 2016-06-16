@@ -8,7 +8,7 @@
 <title>admin- quản lý câu hỏi</title>
 <link rel="stylesheet" type="text/css"
 	href="${pageContext.request.contextPath}/resources/css/styleadmin.css">
-<script src="jquery/jquery-1.7.2.min.js">
+<script src="${pageContext.request.contextPath}/resources/jquery/jquery-1.7.2.min.js">
 	
 </script>
 <style type="text/css">

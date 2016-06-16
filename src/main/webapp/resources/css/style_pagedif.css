@@ -1,0 +1,311 @@
+@import url("style_pagedif.css");
+/* CSS Document */
+body{
+	font-family: "Times New Roman", serif;
+	font-size: 12px;
+	text-decoration: none;
+	background-image: url(../img/image_interface/b-bg.jpg);
+	background-repeat: repeat;
+}
+#container #center #Dk_title {
+	font-family: "Times New Roman", serif;
+	font-size: 18px;
+	font-style: normal;
+	font-weight: bold;
+	color: #000;
+	height: 40px;
+	width: auto;
+	text-align: center;
+	
+}
+#container #center #Dk_title #text {
+	border-top-width: thin;
+	border-right-width: thin;
+	border-bottom-width: thin;
+	border-left-width: thin;
+	border-bottom-style: solid;
+	border-top-color: #006;
+	border-right-color: #006;
+	border-bottom-color: #006;
+	border-left-color: #006;
+	margin-top: 5px;
+	margin-bottom:5px;
+}
+
+
+p {
+	color: #000;
+    font-size: 17px;
+	padding-top: 0px;
+	padding-bottom: 0px;
+	margin-top: 4px;
+	margin-bottom: 4px;
+	outline: none;
+    text-decoration: none;
+}
+
+
+#container {
+	width: 1100px;
+	overflow: hidden;
+	margin-right: auto;
+	margin-left: auto;
+	margin-top: -10px;
+	padding-top: 0px;
+	background-color: #FFF;
+}
+
+
+#container #header {
+	overflow: inherit;
+	/*height: 150px;*/
+	color: #CECECE;
+	border-top: 4px solid ;
+	background-image: linear-gradient(to left, #50B2CE 0%, #FDF7FB 100%);
+	
+}
+
+
+#container #header #logo {
+	margin-left: 55px;
+	width: 300px;
+	height: 170px;
+	background-image: url(../img/image_interface/logo_themeviet.png);
+	float: left;
+	clear: right;
+	background-repeat: no-repeat;
+}
+#container #header #slogan {
+	width: 700px;
+	height: 170px;
+	float: right;
+	clear: none;
+}
+
+
+
+
+#container #menu {
+	height: 50px;
+	border-top: 4px solid #027087;
+	background-color: #032730;
+	box-shadow: 10px 10px 13px #888888;
+}
+#menu #trangchu {
+	font-size: 18px;
+	font-weight: bold;
+	color: #0F0;
+	margin-top: 10px;
+	margin-left: 15px;
+	height: 30px;
+	width: auto;
+	clear: both;
+	float: left;
+	background-repeat: no-repeat;
+	background-position: left;
+}
+#menu #trangchu span {
+	height: 35px;
+	width: 90px;
+	clear: left;
+	float: right;
+	padding-left: 40px;
+    margin-top: -30px;
+}
+
+#menu #trangchu span a{
+	height: 35px;
+	width: 90px;
+	clear: left;
+	float: right;
+	padding-left: 40px;
+	color: #0F0;
+	text-decoration: none;
+}
+
+#menu #trangchu #icon_home {
+	background-image: url(../img/image_interface/home_icon.png);
+	height: 35px;
+	width: 35px;
+	clear: right;
+	float: left;
+	margin-top: -3px;
+	background-repeat: no-repeat;
+}
+
+#menu #menu_item {
+	font-size: 18px;
+	font-weight: bold;
+	color: #FFF;
+	margin-top: 10px;
+	margin-left: 5px;
+	height: 30px;
+	width: auto;
+	clear: right;
+	float: left;
+	background-image: url(../img/image_interface/line_menu.jpg);
+	background-repeat: no-repeat;
+	background-position: left;
+	padding-right: 5px;
+	padding-left: 5px;
+	padding-top: 3px;
+}
+
+#menu #menu_item:hover{
+	text-shadow: 0 0 0.2em #F30, 0 0 0.2em #F30;
+	height: 39px;
+	width: auto;
+	background-color: #027087;
+	    margin-top: 0px;
+    padding-top: 12px;
+    margin-right: -5px;
+}
+
+#menu #trangchu:hover {
+	text-shadow: 0 0 0.2em #F30, 0 0 0.2em #F30;
+	text-shadow: 0 0 0.2em #F30, 0 0 0.2em #F30;
+	height: 39px;
+	width: auto;
+	background-color: #027087;
+	    margin-top: 0px;
+    padding-top: 12px;
+    margin-right: -5px;
+}
+.search_bar {
+	margin-top: 16px;
+	clear: both;
+	float: left;
+	height: 30px;
+	width: 100%;
+	background-image: url(../img/image_interface/search_bar_bg.jpg);
+	background-repeat: repeat-x;
+}
+
+
+.text_run {
+    float: left;
+    font-size: 12pt;
+    font-weight: bold;
+    height: 25px;
+    padding-top: 5px;
+    width: 700px;
+}
+.NavigatorBoxSearch {
+	float: right;
+	height: 25px;
+	width: 290px;
+	background-attachment: scroll;
+	background-color: transparent;
+	background-image: url(../img/image_interface/search_bg_02.png);
+	background-repeat: no-repeat;
+	background-position: 0 0;
+}
+
+.inputSearch {
+    background: none repeat scroll 0 0 transparent;
+    border: medium none;
+    margin: 5px 0 0 8px;
+    width: 156px;
+    float: left;
+}
+.inputSearchheader {
+    background: none repeat scroll 0 0 transparent;
+    border: medium none;
+    color: #CCCCCC;
+    cursor: pointer;
+    float: left;
+    font-weight: bold;
+    height: 22px;
+    margin-top: 3px;
+    padding-left: 45px;
+    width: 70px;
+    font-size: 9pt;
+}
+#container #center {
+	height: auto;
+	width: 60%;
+	border: thin solid #666;
+	text-align: center;
+	margin-top: 60px;
+	margin-left:200px;
+	border-radius: 5px;
+	overflow: hidden;
+	padding-bottom:15px;
+}
+
+
+
+
+#container #footer {
+	height: 150px;
+    clear: both;
+    text-align: center;
+    font-weight: bold;
+    font-size: 0.9em;
+    margin-top: 50px;
+    background-image: linear-gradient(to right, rgb(80, 178, 206) 0%, #FDF7FB 100%);
+	border-top: 4px solid #027087;
+    padding-top: 20px;
+    padding-right: 0;
+    padding-bottom: 20px;
+    padding-left: 0;
+}
+div#footer a {
+	color: #CECECE;
+	font-weight: bold;
+	border: medium none;
+    list-style: none outside none;
+    margin: 0;
+    outline: medium none;
+    padding: 0;
+    text-decoration: none;
+}
+
+#container #footer #social .facebook .mangxahoi.facebook img {
+	margin: -7px;
+	height: auto;
+	width: 70px;
+	
+}
+
+
+
+
+#container #footer #social {
+	display: block;
+}
+
+
+
+
+nav #social i {
+    padding: 15px 14px 25px;
+    font-size: 20px;
+}
+
+
+.fa {
+    display: inline-block;
+    font-family: FontAwesome;
+    font-style: normal;
+    font-weight: normal;
+    line-height: 1;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+
+
+
+#back_to_top {
+	background-image: url(../img/image_interface/gotop.png);
+    bottom: 40px;
+    cursor: pointer;
+    position: fixed;
+    right: 46%;
+    margin-right: -550px;
+    background-repeat: no-repeat;
+    background-attachment: scroll;
+    background-position: 0px 0px;
+    height: 30px;
+    width: 30px;
+}

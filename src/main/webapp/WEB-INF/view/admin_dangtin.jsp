@@ -1,12 +1,12 @@
+
 <%@ page language="java" contentType="text/html; charset=utf-8"
 	pageEncoding="utf-8"%>
-<%@taglib uri="http://www.springframework.org/tags/form" prefix="form"%>
-<%@page import="edu.news.model.*"%>
 <!DOCTYPE html >
 <html lang="en">
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
 <title>admin- đăng tin</title>
+<<<<<<< HEAD
 <link rel="stylesheet" type="text/css"
 	href="${pageContext.request.contextPath}/resources/css/styleadmin.css">
 <link rel="stylesheet" type="text/css"
@@ -15,9 +15,15 @@
 <!-- databpicker -->
 <link rel="stylesheet"
 	href="https://ajax.googleapis.com/ajax/libs/jqueryui/1.11.4/themes/smoothness/jquery-ui.css">
+<<<<<<< HEAD
 <script
 	src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
 <script
+=======
+<script
+	src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+<script
+>>>>>>> 614f88b18ed588530545e453b316d2bc4b767a71
 	src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.11.4/jquery-ui.min.js"></script>
 <script
 	src="${pageContext.request.contextPath}/resources/ckeditor/ckeditor.js"
@@ -31,6 +37,19 @@
 		$("#datepicker").datepicker();
 	});
 </script>
+<<<<<<< HEAD
+=======
+=======
+<link rel="stylesheet" type="text/css" href="${pageContext.request.contextPath}/resources/css/styleadmin.css">
+<link rel="stylesheet" type="text/css" href="${pageContext.request.contextPath}/resources/css/style_dangtin.css">
+<script src="${pageContext.request.contextPath}/resources/jquery/jquery-1.7.2.min.js">
+	
+</script>
+<script src="${pageContext.request.contextPath}/resources/ckeditor/ckeditor.js" type="text/javascript"></script>
+<script src="${pageContext.request.contextPath}/resources/ckfider/ckfinder.js" type="text/javascript"></script>
+
+>>>>>>> 5ba680457b2919fd4975d52bfc0165253eae149f
+>>>>>>> 614f88b18ed588530545e453b316d2bc4b767a71
 <!-- css cho button của vùng textarea -->
 
 <!-- ajax -->
@@ -89,7 +108,7 @@
 			<div id="text_qtri">Quản trị viên</div>
 			<div id="qtrivien">
 				<li>Tên admin: Admin</li>
-				<li><a href="#"">Hồ sơ cá nhân</a></li>
+				<li><a href="#">Hồ sơ cá nhân</a></li>
 			</div>
 
 		</div>
@@ -133,6 +152,7 @@
 	<div id="tindang">
 		<!-- ckeditor+ ckfider -->
 		<div>
+<<<<<<< HEAD
 			<form:form action="${pageContext.request.contextPath}/addNews"
 				method="get" modelAttribute="news" class="submitForm">
 				<h2 style="text-align: center;">ĐĂNG TIN</h2>
@@ -154,12 +174,26 @@
 					<label style="margin-left: 70px;">Ngày đăng:</label>
 					<form:input path="date" type="text" name="image" value=""
 						required="required" style="width: 100px;" id="datepicker" />
+=======
+			<form id=form action="Xulydangtintuc" method="post">
+				<h2 style="text-align: center;">ĐĂNG TIN</h2>
+
+				<!-- ---------- -->
+				<div id="input_tin">
+					<label>Tiêu đề:</label><input type="text" name="title" value=""
+						required="required" style="width: 250px; margin-right: 70px;">
+					<label>Hình ảnh:</label><input type="text" name="image" value=""
+						required="required" style="width: 150px; margin-right: 40px;">
+					<label>Ngày đăng:</label><input type="text" name="image" value=""
+						required="required" style="width: 150px; margin-right: 40px;">
+>>>>>>> 5ba680457b2919fd4975d52bfc0165253eae149f
 				</div>
 				<!-- -------------- -->
-				<form:textarea path="content" class="ckeditor" id='editor1'
-					name="editor1" rows="33" cols="136"
-					style="width: 100%; height: 100%;" />
-
+				<textarea id="summary" rows="33" cols="136"
+					style="width: 100%; height: 100%;"></textarea>
+				<script type="text/javascript">
+					CKEDITOR.replace('summary');
+				</script>
 				<!-- button xự kiện -->
 
 				<div id="button">
@@ -170,7 +204,7 @@
 						type="reset" name="cancel" value="Hủy" class="action">
 				</div>
 				<!--end button xự kiện -->
-			</form:form>
+			</form>
 		</div>
 		<!-- het form cke & ckf -->
 	</div>

@@ -6,8 +6,8 @@
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
 <title>admin- danh sách bình luận</title>
-<link rel="stylesheet" type="text/css" href="${pageContext.request.contextPath}/resources/css/styleadmin.css">
-<script src="jquery/jquery-1.7.2.min.js">
+<link rel="stylesheet" type="text/css" href="${pageContext.request.contextPath}/resources/img/css/styleadmin.css">
+<script src="${pageContext.request.contextPath}/resources/img/jquery/jquery-1.7.2.min.js">
 	
 </script>
 <style type="text/css">
