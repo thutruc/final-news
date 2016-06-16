@@ -6,7 +6,7 @@
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
 <title>web tin giáo dục</title>
 <link rel="stylesheet" type="text/css" href="${pageContext.request.contextPath}/resources/css/style.css">
-<script src="jquery/jquery-1.7.2.min.js">
+<script src="${pageContext.request.contextPath}/resources/jquery/jquery-1.7.2.min.js">
 	
 </script>
 </head>
@@ -28,8 +28,7 @@
 			<div id="menu_item">Tâm lý</div>
 			<div id="menu_item">Đồng hành cùng con</div>
 			<div id="login">
-				<a
-					href="http://localhost:8080/WebTinGiaoDuc/trangcon_user.jsp">Đăng
+				<a href="http://localhost:8080/WebTinGiaoDuc/trangcon_user.jsp">Đăng
 					nhập</a>
 			</div>
 		</div>
@@ -328,7 +327,8 @@
 				<form id="form_datcauhoi" action="" method="post">
 					<img alt="" src="${pageContext.request.contextPath}/resources/img/image_interface/iconthu.png"
 						style="width: 40px; height: 40px; float: left; margin: 0px 0 -26px 10px;">
-					<p style="margin-bottom: -16px;text-align: center;">Hộp thư tư vấn</p>
+					<p style="margin-bottom: -16px; text-align: center;">Hộp thư tư
+						vấn</p>
 					<input type="text" name="email" maxlength="50" placeholder="Email"
 						class="in">
 					<textarea id="noidung" rows="33" cols="136"
@@ -345,22 +345,29 @@
 				</form>
 			</div>
 			<div class="footer1"
-				style="width: 35%; text-align: left; font-size: 0px;">
-				<p style="font-size: 14px;">© Địa chỉ liên hệ: Lạc Tánh-Tánh
+				style="width: 48%; text-align: left; font-size: 13px;">
+				<div style="width: 100%; height: 40px; color: #860f55;">
+					<a href="" style="color: #027087; font-weight: bold;">Trang
+						chủ&nbsp;</a> | &nbsp;<a href=""
+						style="color: #027087; font-weight: bold;">Hướng nghiệp</a>&nbsp;
+					| &nbsp;<a href="" style="color: #027087; font-weight: bold;">Góc
+						nhìn chuyên gia</a>&nbsp; | &nbsp;<a href=""
+						style="color: #027087; font-weight: bold;">Tâm lý</a>&nbsp; |
+					&nbsp;<a href="" style="color: #027087; font-weight: bold;">Đồng
+						hành cùng con</a>
+				</div>
+				<p style="font-size: 13px;">© Địa chỉ liên hệ: Lạc Tánh-Tánh
 					Linh- Bình Thuận</p>
-				</br>
-				<p style="margin-left: 17px; font-size: 14px;">Số điện thoại:
+				<p style="margin-left: 17px; font-size: 13px;">Số điện thoại:
 					(0623)880 924</p>
-				</br>
-				<p style="margin-left: 17px; font-size: 14px;">Email:
+				<p style="margin-left: 17px; font-size: 13px;">Email:
 					bichthietnguyen93@gmail.com</p>
-				</br>
-				<p style="margin-left: 17px; font-size: 14px;">Hotline:
+				<p style="margin-left: 17px; font-size: 13px;">Hotline:
 					0962968534</p>
 			</div>
 			<div class="footer1">
-				<p style="color: #032730; font-size: 16px;">CHỊU TRÁCH NHIỆM BÀI
-					VIẾT:</p>
+				<p style="color: #032730; font-size: 15px; margin-top: -5px;">CHỊU
+					TRÁCH NHIỆM BÀI VIẾT:</p>
 				<p style="font-size: 14px;">Nguyễn Thị Bích Thiệt</p>
 				<p style="font-size: 14px;">Nguyễn Thị Thu Trúc</p>
 				<p style="font-size: 14px;">Đỗ Thị Thu Thủy</p>

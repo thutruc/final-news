@@ -6,8 +6,8 @@
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
 <title>admin- hồ sơ cá nhân</title>
-<link rel="stylesheet" type="text/css" href="${pageContext.request.contextPath}/resources/css/styleadmin.css">
-<script src="jquery/jquery-1.7.2.min.js">
+<link rel="stylesheet" type="text/css" href="${pageContext.request.contextPath}/resources/img/css/styleadmin.css">
+<script src="${pageContext.request.contextPath}/resources/img/jquery/jquery-1.7.2.min.js">
 	
 </script>
 <style type="text/css">
@@ -42,29 +42,29 @@
 			<div id="text">Quản lý</div>
 			<ul style="list-style-type: none">
 				<li><img alt="" style="width: 23px; height: 25px;"
-					src="${pageContext.request.contextPath}/resources/img/image_interface/icontin.png">
+					src="img/image_interface/icontin.png">
 					<ul>
 						<li><a href="#">Quản lý tin tức</a></li>
 					</ul></li>
 				<li><img alt="" style="width: 23px; height: 25px;"
-					src="${pageContext.request.contextPath}/resources/img/image_interface/chuyenmucicon.png">
+					src="img/image_interface/chuyenmucicon.png">
 					<ul>
 						<li><a href="#">Quản lý danh mục</a></li>
 					</ul></li>
 
 				<li><img alt="" style="width: 23px; height: 25px;"
-					src="${pageContext.request.contextPath}/resources/img/image_interface/commenticon.png">
+					src="img/image_interface/commenticon.png">
 					<ul>
 						<li><a href="#">Quản lý bình luận</a></li>
 					</ul></li>
 				<li><img alt="" style="width: 23px; height: 25px;"
-					src="${pageContext.request.contextPath}/resources/img/image_interface/avataradmin.png">
+					src="img/image_interface/avataradmin.png">
 					<ul>
 						<!-- ds chứa thêm xóa sửa -->
 						<li><a href="#">Quản lý người dùng</a></li>
 					</ul></li>
 				<li><img alt="" style="width: 23px; height: 25px;"
-					src="${pageContext.request.contextPath}/resources/img/image_interface/cauhoiicon.png">
+					src="img/image_interface/cauhoiicon.png">
 					<ul>
 						<li><a href="#">Quản lý hỏi đáp</a></li>
 					</ul></li>

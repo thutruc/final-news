@@ -5,59 +5,14 @@
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
 <title>web tin giáo dục</title>
- -->
 <link rel="stylesheet" type="text/css" href="${pageContext.request.contextPath}/resources/css/style_trangcon.css">
-<script src="jquery/jquery-1.7.2.min.js">
+<link rel="stylesheet" type="text/css" href="${pageContext.request.contextPath}/resources/css/style_listchuyenmuc.css">
+<script src="${pageContext.request.contextPath}/resources/jquery/jquery-1.7.2.min.js">
 	
 </script>
 <script type="text/javascript">
 	
 </script>
-<style type="text/css">
-#xemthem {
-	border-radius: 50%;
-	color: #FFFFFF;
-	height: 1px;
-	font-size: 13px;
-	margin-top: 40px;
-	background-color: #032730;
-	font-family: Georgia, "Times New Roman", Times, serif;
-}
-
-#xemthem:hover {
-	box-shadow: 0 2px 10px 0 rgba(0, 0, 0, 0.16), 0 2px 10px 0
-		rgba(0, 0, 0, 0.12);
-}
-
-#news {
-	width: 75%;
-	height: 1035px;
-	float: left;
-	padding-left: 2px;
-	padding-right: 20px;
-}
-
-#news #news_item {
-	width: 100%;
-	height: 150px;
-	margin-bottom: 25px;
-	border-radius: 5px;
-	background-color: #F3f3f3;
-}
-
-#news #news_item #hinhanh {
-	clear: right;
-	float: left;
-	height: 100%;
-	width: 33%;
-}
-
-#news #news_item #noidung_tomtat {
-	float: right;
-	width: 65%;
-	height: 100%;
-}
-</style>
 </head>
 
 <body>
@@ -74,23 +29,29 @@
 	<div id="news">
 		<!---thamkhao  http://www.marrybaby.vn/con-dang-lon/be-tu-4-den-6-tuoi/8-chieu-giup-me-day-tre-biet-nghe-loi-->
 		<%
-			for (int i = 0; i < 5; i++) {
+			for (int i = 0; i < 6; i++) {
 		%>
-		<div id="news_item">
-			<div id="hinhanh">
-				<img
-					src="${pageContext.request.contextPath}/resources/img/image_hinhanh/donghanhcungcon/mot-nam-hoc-thanh-cong-1.jpg"
-					style="height: 150px; width: 250px;">
-			</div>
-			<div id="noidung_tomtat">
-				<a href="#"><h4>Cùng con học tập cũng là một "sự nghiệp"</h4></a>
-				<p>Dạy con học gây không ít căng thẳng cho các bậc phụ huynh.
-					Việc này không hề đơn giản mà có thể coi là cả một "sự nghiệp" của
-					các bậc làm cha, làm mẹ. Bên cạnh kiến thức còn đòi hỏi nhiều tình
-					yêu thương, sự kiên nhẫn và phương pháp khoa học.</p>
+		<h2>
+			<a href="#">Cùng con học tập cũng là một "sự nghiệp"</a>
+		</h2>
+		<p>
+			<img
+				src="${pageContext.request.contextPath}/resources/img/image_hinhanh/donghanhcungcon/mot-nam-hoc-thanh-cong-1.jpg"
+				width="100" height="66" align="left" class="img">
+		</p>
+		<span class="date">&nbsp;12/6/2016</span>
+		<p>Dạy con học gây không ít căng thẳng cho các bậc phụ huynh. Việc
+			này không hề đơn giản mà có thể coi là cả một "sự nghiệp" của các bậc
+			làm cha, làm mẹ. Bên cạnh kiến thức còn đòi hỏi nhiều tình yêu
+			thương, sự kiên nhẫn và phương pháp khoa học.</p>
+		<p align="right">
+			<span><a href="#" class="readmore">Xem tiếp <img
+					src="${pageContext.request.contextPath}/resources/img/image_interface/readmore.png" width="12" height="11"
+					align="baseline"></a> </span>
+		</p>
 
-			</div>
-		</div>
+
+
 		<%
 			}
 		%>
@@ -155,11 +116,16 @@
 			
 		<!-- het tin -->
 		<!---chuyển trang--->
-		<div id="xemthem">
-			<button id="xemthem" type="submit"
-				style="width: 100px; height: 40px; margin-top: -13px; margin-left: 343px;">Xem
-				thêm</button>
-		</div>
+		<table width="273" border="0" align="center">
+			<tbody>
+				<tr align="center">
+					<td align="center"><a href="#" class="pagelimitfirst">Trước</a>
+						<a href="#" class="pagelimit1">1</a> <a href="#" class="pagelimit">2</a>
+						<a href="#" class="pagelimit">3</a> <a href="#" class="pagelimit">4</a>
+						<a href="#" class="pagelimitlast">Sau</a></td>
+				</tr>
+			</tbody>
+		</table>
 		<!---hết chuyển trang--->
 	</div>
 </body>

@@ -9,11 +9,11 @@
 <link rel="stylesheet" type="text/css" href="${pageContext.request.contextPath}/resources/css/styleadmin.css">
 <link rel="stylesheet" type="text/css"
 	href="${pageContext.request.contextPath}/resources/css/style_suathongtinuser.css">
-<script src="jquery/jquery-1.7.2.min.js">
+<script src="${pageContext.request.contextPath}/resources/jquery/jquery-1.7.2.min.js">
 	
 </script>
-<script src="ckeditor/ckeditor.js" type="text/javascript"></script>
-<script src="ckfider/ckfinder.js" type="text/javascript"></script>
+<script src="${pageContext.request.contextPath}/resources/ckeditor/ckeditor.js" type="text/javascript"></script>
+<script src="${pageContext.request.contextPath}/resources/ckfider/ckfinder.js" type="text/javascript"></script>
 
 </head>
 

@@ -1,49 +1,37 @@
 @charset "utf-8";
 
-#container #center #top_chitiet {
-	width: 90%;
-	background-color: #50b2ce;
-	height: 1200px;
-	margin: auto;
-	margin-top: 75px;
-	padding-left: 20px;
-	padding-right: 20px;
+#container #center #top1 {
+	float: left;
+	clear: right;
 }
 
-#center #top_chitiet #title_tinchitiet h2 {
-	margin: auto;
-	width: 95%;
-	background-color: red;
-	text-align: center;
-	font-size: 27px;
-	height: 50px;
+#container #center #top1 #top_chitiet {
+	box-shadow: 1px 1px 15px #0A1628;
+	border-radius: 5px;
+	width: 65%;
+	background-color: #F6F9F9;
+	height: auto;
+	margin: 20px 0 30px 39px;
+	padding: 0 20px 20px 20px;
+	float: left;
+	clear: right;
 }
 
-#center #ct_link {
-	width: 93%;
-	height: 650px;
-	margin: auto;
-	
-}
-
-#center #ct_link #binhluan {
-    width: 63%;
-    padding-left: 10px;
-    height: 300px;
-    margin-top: 20px;
-    float: left;
-    clear: right;
-}
-
-#center #ct_link #tinlienquan {
-	background-color: #ECE7B3;
-	width: 31%;
+#container #center #top1 #tinlienquan {
+	width: 22%;
 	height: 500px;
 	float: right;
-	margin-top: 20px;
+	margin: 40px 36px 0 0;
+	text-align: center;
+	font-size: 16px;
 }
-#center #ct_link #tinlienquan #title {font-size: 24px;
-    width: 100%;
-    color: #027087;
-    margin-top: 10px;
-    text-align: center;}
+
+#container #center #top1 #tin {
+	border-bottom-style: groove;
+	height: 500px;
+	margin-bottom: 20px;
+}
+
+.muc {
+	font-size: 20px;
+}

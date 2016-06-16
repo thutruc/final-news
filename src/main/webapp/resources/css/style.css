@@ -579,7 +579,7 @@ iframe[Attributes Style] {
 	border-top-color: #027087;
 }
 
-#container #footer {
+ #footer {
 	height: 150px;
 	clear: both;
 	font-weight: bold;
@@ -596,10 +596,10 @@ iframe[Attributes Style] {
 
 #footer .footer1 {
 	width: 23%;
-	height: 80%;
-	margin: 10px 20px 10px 40px;
-	float: left;
-	clear: right;
+    height: 80%;
+    margin: 10px 0 10px 20px;
+    float: left;
+    clear: right;
 }
 
 #form_datcauhoi {
@@ -635,27 +635,7 @@ iframe[Attributes Style] {
 	font-size: 14px;
 }
 
-/* #footer a {
-	color: #CECECE;
-	font-weight: bold;
-	border: medium none;
-	list-style: none outside none;
-	margin: 0;
-	outline: medium none;
-	padding: 0;
-	text-decoration: none;
-}
 
-.fa {
-	display: inline-block;
-	font-family: FontAwesome;
-	font-style: normal;
-	font-weight: normal;
-	line-height: 1;
-	-webkit-font-smoothing: antialiased;
-	-moz-osx-font-smoothing: grayscale;
-}
- */
 #go_top {
 	background-image: url(../img/image_interface/gotop.png);
 	width: 31px;
