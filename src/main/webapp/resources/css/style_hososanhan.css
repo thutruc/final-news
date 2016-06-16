@@ -1,0 +1,248 @@
+@charset "utf-8";
+
+#main {
+	margin: -10px auto auto;
+	width: 600px;
+}
+
+form {
+	margin: auto;
+}
+input.action:first-child {
+	margin-left: 100px;
+}
+
+.input {
+	display: none;
+}
+.title{
+	font-size: 15px;
+}
+.label {
+	background: #DDEAF3;
+	text-transform: capitalize;
+	border-bottom: 1px solid #D8D8D8;
+	color: black;
+	cursor: pointer;
+	display: block;
+	font-family: "Times New Roman", serif;
+	font-size: 14px;
+	letter-spacing: 1px;
+	padding: 8px 10px;
+	position: relative;
+	-moz-transition: background-color 0.3s ease;
+	-webkit-transition: background-color 0.3s ease;
+	-o-transition: background-color 0.3s ease;
+	transition: background-color 0.3s ease;
+}
+
+.label:before {
+	content: "";
+	position: absolute;
+	right: 10px;
+	top: 13px;
+	width: 0;
+	height: 0;
+	border: 4px solid transparent;
+	border-top: 5px solid white;
+}
+
+.content {
+	background-color: #FFFFFF;
+	height: 0pt;
+	opacity: 0;
+	-moz-transition: opacity 0.5s ease;
+	-o-transition: opacity 0.5s ease;
+	-webkit-transition: opacity 0.5s ease;
+	transition: opacity 0.5s ease;
+}
+
+.content p{
+	color: #888888;
+	font-family: "Times New Roman", serif;
+	font-size: 14px;
+	line-height: 18px;
+	padding: 10px;
+}
+
+.label:hover {
+	color: #000;
+	background-color: #F6F7F9;
+	border-color: transparent;
+}
+
+.input:checked ~ .content {
+	height: auto;
+	opacity: 1;
+	margin-top: 20px;
+}
+
+.input:checked ~ label {
+	background-color: #FFF;
+	outline: none;
+	text-decoration: none;
+	color: #000;
+	text-decoration: none;
+}
+
+.input:checked ~ label:before {
+	border-bottom: 5px solid white;
+	border-top: none;
+}
+
+.ten {
+	width: 40%;
+	float: left;
+	clear: right;
+}
+
+.sua:hover {
+	color: red;
+}
+
+#form_doiten {margin-left: -45px;}
+#form_doiten table {
+	margin-left: 160px;
+	border: 1px;
+	width: 100%;
+	border-spacing: 20px;
+}
+
+#form_doiten table tr td {
+	size: 60px;
+}
+
+#form_doiten input.ip {
+	height: 25px;
+	border-radius: 5px;
+	transition: width 1s ease;
+	width: 270px;
+}
+
+#form_doiten input.action {
+	width: 80px;
+	height: 30px;
+	margin-right: 10px;
+	background: #66ccFF;
+	border-radius: 5px;
+}
+
+#form_doiten .actiongui {
+	width: 80px;
+	height: 30px;
+	margin-right: 10px;
+	background: #DDEAF3;
+	border-radius: 5px;
+	margin-left: 25px;
+	margin-bottom: 20px;
+}
+
+#form_doiten .actiongui:hover {
+	box-shadow: 0px 0px 10px #0099ff;
+}
+
+#form_doiten .actiongui:first-child {
+	margin-left: 295px;
+}
+
+#form_doiten .actionhuy {
+	width: 80px;
+	height: 30px;
+	margin-right: 10px;
+	background: #DDEAF3;
+	border-radius: 5px;
+}
+
+#form_doiten .actionhuy:hover {
+	box-shadow: 0px 0px 10px #0099ff;
+}
+
+#form_doiten .actionhuy:first-child {
+	margin-left: 100px;
+}
+
+#form_doiten input.action:HOVER {
+	box-shadow: 0px 0px 10px #0099ff;
+}
+
+#form_doiten input.action:first-child {
+	margin-left: 100px;
+}
+
+#form_doiten input.ip:HOVER {
+	box-shadow: 1px 1px 15px #0099ff;
+	width: 320px;
+}
+#form_doimatkhau {margin-left: -45px;}
+#form_doimatkhau table {
+	margin-left: 110px;
+	border: 1px;
+	width: 100%;
+	border-spacing: 20px;
+}
+
+#form_doimatkhau table tr td {
+	size: 60px;
+}
+
+#form_doimatkhau input.ip {
+	height: 25px;
+	border-radius: 5px;
+	transition: width 1s ease;
+	width: 270px;
+}
+
+#form_doimatkhau input.action {
+	width: 80px;
+	height: 30px;
+	margin-right: 10px;
+	background: #66ccFF;
+	border-radius: 5px;
+}
+
+#form_doimatkhau .actiongui {
+	width: 80px;
+	height: 30px;
+	margin-right: 10px;
+	background: #DDEAF3;
+	border-radius: 5px;
+	margin-left: 25px;
+	margin-bottom: 20px;
+}
+
+#form_doimatkhau .actiongui:hover {
+	box-shadow: 0px 0px 10px #0099ff;
+}
+
+#form_doimatkhau .actiongui:first-child {
+	margin-left: 295px;
+}
+
+#form_doimatkhau .actionhuy {
+	width: 80px;
+	height: 30px;
+	margin-right: 10px;
+	background: #DDEAF3;
+	border-radius: 5px;
+}
+
+#form_doimatkhau .actionhuy:hover {
+	box-shadow: 0px 0px 10px #0099ff;
+}
+
+#form_doimatkhau .actionhuy:first-child {
+	margin-left: 100px;
+}
+
+#form_doimatkhau input.action:HOVER {
+	box-shadow: 0px 0px 10px #0099ff;
+}
+
+#form_doimatkhau input.action:first-child {
+	margin-left: 100px;
+}
+
+#form_doimatkhau input.ip:HOVER {
+	box-shadow: 1px 1px 15px #0099ff;
+	width: 320px;
+}
