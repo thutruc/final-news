@@ -1,19 +1,23 @@
 package edu.news.controller;
 
 
+import java.sql.Date;
+import java.util.ArrayList;
+import java.util.List;
+
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestMethod;
 import org.springframework.web.servlet.ModelAndView;
 
-import edu.news.dao.DAONews;
+import edu.news.dao.*;
 import edu.news.dao.exception.DAOException;
 import edu.news.model.News;
 
 @Controller
 public class AdminController {
-	DAONews dao;
+	DAO dao;
 
 	@RequestMapping(value = "trangchu")
 	public String trangchu() {
@@ -38,17 +42,30 @@ public class AdminController {
 	}
 	@RequestMapping(value="addNews", method = RequestMethod.GET)
 	public String addNews(News news, Model model) throws DAOException {
+		System.out.println("addNews....");
 		dao = new DAONews(News.class);
-		System.out.println(news);
-		dao.save(news);
+		java.util.Date d = news.getDate();
+		int day = d.getDay();
+		int month = d.getMonth();
+		int year = d.getYear();
+		Date dSQL = new Date(year, month, day);
+		News n = new News(news.getContent(), dSQL, news.getImg(), news.getNewsBrief(), news.getTitle(),  news.getType());
+		System.out.println(n);
+		dao.save(n);
 		model.addAttribute("message","Đăng tin thành công!");
-		return "result";
+		return "trangchu";
 
 	}
-	@RequestMapping(value = "test", method =  RequestMethod.GET)
+	@RequestMapping(value = "postNews", method =  RequestMethod.GET)
 	public ModelAndView test(Model model) {
+		dao = new DAOModel(edu.news.model.Model.class);
+		List<String> lstType = new ArrayList<String>();
+		
 		return new ModelAndView("admin_dangtin", "news", new News());
 
+	}
+	public String model(){
+		return "";
 	}
 
 	@RequestMapping(value = "student", method = RequestMethod.GET)

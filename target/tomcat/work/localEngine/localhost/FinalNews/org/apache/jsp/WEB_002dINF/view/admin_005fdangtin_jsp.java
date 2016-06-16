@@ -12,7 +12,7 @@ public final class admin_005fdangtin_jsp extends org.apache.jasper.runtime.HttpJ
 
   private static java.util.List _jspx_dependants;
 
-  private org.apache.jasper.runtime.TagHandlerPool _005fjspx_005ftagPool_005fform_005fform_0026_005fmodelAttribute_005fmethod_005faction;
+  private org.apache.jasper.runtime.TagHandlerPool _005fjspx_005ftagPool_005fform_005fform_0026_005fmodelAttribute_005fmethod_005fclass_005faction;
   private org.apache.jasper.runtime.TagHandlerPool _005fjspx_005ftagPool_005fform_005finput_0026_005fvalue_005ftype_005fstyle_005frequired_005fpath_005fname_005fnobody;
   private org.apache.jasper.runtime.TagHandlerPool _005fjspx_005ftagPool_005fform_005finput_0026_005fvalue_005ftype_005fstyle_005frequired_005fpath_005fname_005fid_005fnobody;
   private org.apache.jasper.runtime.TagHandlerPool _005fjspx_005ftagPool_005fform_005ftextarea_0026_005fstyle_005frows_005fpath_005fname_005fid_005fcols_005fclass_005fnobody;
@@ -25,7 +25,7 @@ public final class admin_005fdangtin_jsp extends org.apache.jasper.runtime.HttpJ
   }
 
   public void _jspInit() {
-    _005fjspx_005ftagPool_005fform_005fform_0026_005fmodelAttribute_005fmethod_005faction = org.apache.jasper.runtime.TagHandlerPool.getTagHandlerPool(getServletConfig());
+    _005fjspx_005ftagPool_005fform_005fform_0026_005fmodelAttribute_005fmethod_005fclass_005faction = org.apache.jasper.runtime.TagHandlerPool.getTagHandlerPool(getServletConfig());
     _005fjspx_005ftagPool_005fform_005finput_0026_005fvalue_005ftype_005fstyle_005frequired_005fpath_005fname_005fnobody = org.apache.jasper.runtime.TagHandlerPool.getTagHandlerPool(getServletConfig());
     _005fjspx_005ftagPool_005fform_005finput_0026_005fvalue_005ftype_005fstyle_005frequired_005fpath_005fname_005fid_005fnobody = org.apache.jasper.runtime.TagHandlerPool.getTagHandlerPool(getServletConfig());
     _005fjspx_005ftagPool_005fform_005ftextarea_0026_005fstyle_005frows_005fpath_005fname_005fid_005fcols_005fclass_005fnobody = org.apache.jasper.runtime.TagHandlerPool.getTagHandlerPool(getServletConfig());
@@ -34,7 +34,7 @@ public final class admin_005fdangtin_jsp extends org.apache.jasper.runtime.HttpJ
   }
 
   public void _jspDestroy() {
-    _005fjspx_005ftagPool_005fform_005fform_0026_005fmodelAttribute_005fmethod_005faction.release();
+    _005fjspx_005ftagPool_005fform_005fform_0026_005fmodelAttribute_005fmethod_005fclass_005faction.release();
     _005fjspx_005ftagPool_005fform_005finput_0026_005fvalue_005ftype_005fstyle_005frequired_005fpath_005fname_005fnobody.release();
     _005fjspx_005ftagPool_005fform_005finput_0026_005fvalue_005ftype_005fstyle_005frequired_005fpath_005fname_005fid_005fnobody.release();
     _005fjspx_005ftagPool_005fform_005ftextarea_0026_005fstyle_005frows_005fpath_005fname_005fid_005fcols_005fclass_005fnobody.release();
@@ -81,11 +81,15 @@ public final class admin_005fdangtin_jsp extends org.apache.jasper.runtime.HttpJ
       out.write((java.lang.String) org.apache.jasper.runtime.PageContextImpl.proprietaryEvaluate("${pageContext.request.contextPath}", java.lang.String.class, (PageContext)_jspx_page_context, null, false));
       out.write("/resources/css/style_dangtin.css\">\r\n");
       out.write("<script src=\"jquery/jquery-1.7.2.min.js\"></script>\r\n");
-      out.write("<link rel=\"stylesheet\" href=\"https://ajax.googleapis.com/ajax/libs/jqueryui/1.11.4/themes/smoothness/jquery-ui.css\">\r\n");
-      out.write("<script src=\"https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js\"></script>\r\n");
-      out.write("<script src=\"https://ajax.googleapis.com/ajax/libs/jqueryui/1.11.4/jquery-ui.min.js\"></script>\r\n");
+      out.write("<!-- databpicker -->\r\n");
+      out.write("<link rel=\"stylesheet\"\r\n");
+      out.write("\thref=\"https://ajax.googleapis.com/ajax/libs/jqueryui/1.11.4/themes/smoothness/jquery-ui.css\">\r\n");
       out.write("<script\r\n");
-      out.write("src=\"");
+      out.write("\tsrc=\"https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js\"></script>\r\n");
+      out.write("<script\r\n");
+      out.write("\tsrc=\"https://ajax.googleapis.com/ajax/libs/jqueryui/1.11.4/jquery-ui.min.js\"></script>\r\n");
+      out.write("<script\r\n");
+      out.write("\tsrc=\"");
       out.write((java.lang.String) org.apache.jasper.runtime.PageContextImpl.proprietaryEvaluate("${pageContext.request.contextPath}", java.lang.String.class, (PageContext)_jspx_page_context, null, false));
       out.write("/resources/ckeditor/ckeditor.js\"\r\n");
       out.write("\ttype=\"text/javascript\"></script>\r\n");
@@ -94,12 +98,49 @@ public final class admin_005fdangtin_jsp extends org.apache.jasper.runtime.HttpJ
       out.write((java.lang.String) org.apache.jasper.runtime.PageContextImpl.proprietaryEvaluate("${pageContext.request.contextPath}", java.lang.String.class, (PageContext)_jspx_page_context, null, false));
       out.write("/resources/ckfider/ckfinder.js\"\r\n");
       out.write("\ttype=\"text/javascript\"></script>\r\n");
+      out.write("<!-- integrate datepiker -->\r\n");
       out.write("<script>\r\n");
-      out.write("  $(document).ready(function() {\r\n");
-      out.write("    $(\"#datepicker\").datepicker();\r\n");
-      out.write("  });\r\n");
-      out.write("  </script>\r\n");
+      out.write("\t$(document).ready(function() {\r\n");
+      out.write("\t\t$(\"#datepicker\").datepicker();\r\n");
+      out.write("\t});\r\n");
+      out.write("</script>\r\n");
       out.write("<!-- css cho button của vùng textarea -->\r\n");
+      out.write("\r\n");
+      out.write("<!-- ajax -->\r\n");
+      out.write("<!-- <script type=\"text/javascript\"> -->\r\n");
+      out.write("<!-- //  $(document).on(\"click\",\".submitForm\", function(){ -->\r\n");
+      out.write("\r\n");
+      out.write("<!-- //         $.ajax({ -->\r\n");
+      out.write("<!-- //             url: \"/addNews\", -->\r\n");
+      out.write("<!-- //             type: \"POST\", -->\r\n");
+      out.write("<!-- //             data:{ -->\r\n");
+      out.write("<!-- //                 success: name, -->\r\n");
+      out.write("\r\n");
+      out.write("<!-- //             }, -->\r\n");
+      out.write("<!-- //             success: function(data){ -->\r\n");
+      out.write("<!-- //                 if(data == 1){ -->\r\n");
+      out.write("<!-- //                     $(\".dialog-text\").text(\"Add thanh cong\"); -->\r\n");
+      out.write("<!-- //                 }else{ -->\r\n");
+      out.write("<!-- //                     $(\".dialog-text\").text(\"That bai\"); -->\r\n");
+      out.write("<!-- //                 } -->\r\n");
+      out.write("<!-- //                 $(\".dialog-fb\").fadeIn(500, function(){ -->\r\n");
+      out.write("<!-- //                     setTimeout(hide_dialog,5000); -->\r\n");
+      out.write("<!-- //                 }); -->\r\n");
+      out.write("<!-- //             } -->\r\n");
+      out.write("<!-- //         }); // END AJAX -->\r\n");
+      out.write("<!-- //     }); -->\r\n");
+      out.write("\r\n");
+      out.write("\r\n");
+      out.write("<!-- // }); -->\r\n");
+      out.write("<!-- // function hide_dialog() { -->\r\n");
+      out.write("<!-- //     $(\".dialog-fb\").fadeOut(500); -->\r\n");
+      out.write("<!-- // } -->\r\n");
+      out.write("<!-- </script> -->\r\n");
+      out.write("<div class=\"dialog-fb\">\r\n");
+      out.write("\t<span class=\"dialog-text\"></span>\r\n");
+      out.write("</div>\r\n");
+      out.write("\r\n");
+      out.write("\r\n");
       out.write("<style type=\"text/css\">\r\n");
       out.write("#form #button input .action {\r\n");
       out.write("\tbackground: #DDEAF3;\r\n");
@@ -203,15 +244,17 @@ public final class admin_005fdangtin_jsp extends org.apache.jasper.runtime.HttpJ
     PageContext pageContext = _jspx_page_context;
     JspWriter out = _jspx_page_context.getOut();
     //  form:form
-    org.springframework.web.servlet.tags.form.FormTag _jspx_th_form_005fform_005f0 = (org.springframework.web.servlet.tags.form.FormTag) _005fjspx_005ftagPool_005fform_005fform_0026_005fmodelAttribute_005fmethod_005faction.get(org.springframework.web.servlet.tags.form.FormTag.class);
+    org.springframework.web.servlet.tags.form.FormTag _jspx_th_form_005fform_005f0 = (org.springframework.web.servlet.tags.form.FormTag) _005fjspx_005ftagPool_005fform_005fform_0026_005fmodelAttribute_005fmethod_005fclass_005faction.get(org.springframework.web.servlet.tags.form.FormTag.class);
     _jspx_th_form_005fform_005f0.setPageContext(_jspx_page_context);
     _jspx_th_form_005fform_005f0.setParent(null);
-    // /WEB-INF/view/admin_dangtin.jsp(95,3) name = action type = null reqTime = true required = false fragment = false deferredValue = false expectedTypeName = null deferredMethod = false methodSignature = null
+    // /WEB-INF/view/admin_dangtin.jsp(136,3) name = action type = null reqTime = true required = false fragment = false deferredValue = false expectedTypeName = null deferredMethod = false methodSignature = null
     _jspx_th_form_005fform_005f0.setAction((java.lang.String) org.apache.jasper.runtime.PageContextImpl.proprietaryEvaluate("${pageContext.request.contextPath}/addNews", java.lang.String.class, (PageContext)_jspx_page_context, null, false));
-    // /WEB-INF/view/admin_dangtin.jsp(95,3) name = method type = null reqTime = true required = false fragment = false deferredValue = false expectedTypeName = null deferredMethod = false methodSignature = null
-    _jspx_th_form_005fform_005f0.setMethod("post");
-    // /WEB-INF/view/admin_dangtin.jsp(95,3) name = modelAttribute type = null reqTime = true required = false fragment = false deferredValue = false expectedTypeName = null deferredMethod = false methodSignature = null
+    // /WEB-INF/view/admin_dangtin.jsp(136,3) name = method type = null reqTime = true required = false fragment = false deferredValue = false expectedTypeName = null deferredMethod = false methodSignature = null
+    _jspx_th_form_005fform_005f0.setMethod("get");
+    // /WEB-INF/view/admin_dangtin.jsp(136,3) name = modelAttribute type = null reqTime = true required = false fragment = false deferredValue = false expectedTypeName = null deferredMethod = false methodSignature = null
     _jspx_th_form_005fform_005f0.setModelAttribute("news");
+    // /WEB-INF/view/admin_dangtin.jsp(136,3) null
+    _jspx_th_form_005fform_005f0.setDynamicAttribute(null, "class", new String("submitForm"));
     int[] _jspx_push_body_count_form_005fform_005f0 = new int[] { 0 };
     try {
       int _jspx_eval_form_005fform_005f0 = _jspx_th_form_005fform_005f0.doStartTag();
@@ -227,19 +270,24 @@ public final class admin_005fdangtin_jsp extends org.apache.jasper.runtime.HttpJ
           if (_jspx_meth_form_005finput_005f0(_jspx_th_form_005fform_005f0, _jspx_page_context, _jspx_push_body_count_form_005fform_005f0))
             return true;
           out.write("\r\n");
-          out.write("\t\t\t\t\t<label>Loại tin:</label>\r\n");
+          out.write("\t\t\t\t\t<label>Tóm tắt:</label>\r\n");
           out.write("\t\t\t\t\t");
           if (_jspx_meth_form_005finput_005f1(_jspx_th_form_005fform_005f0, _jspx_page_context, _jspx_push_body_count_form_005fform_005f0))
             return true;
           out.write("\r\n");
-          out.write("\t\t\t\t\t<label style=\"margin-left: 70px;\">Hình ảnh:</label>\r\n");
+          out.write("\t\t\t\t\t<label>Loại tin:</label>\r\n");
           out.write("\t\t\t\t\t");
           if (_jspx_meth_form_005finput_005f2(_jspx_th_form_005fform_005f0, _jspx_page_context, _jspx_push_body_count_form_005fform_005f0))
             return true;
           out.write("\r\n");
-          out.write("\t\t\t\t\t<label style=\"margin-left: 90px;\">Ngày đăng:</label>\r\n");
+          out.write("\t\t\t\t\t<label style=\"margin-left: 70px;\">Hình ảnh:</label>\r\n");
           out.write("\t\t\t\t\t");
           if (_jspx_meth_form_005finput_005f3(_jspx_th_form_005fform_005f0, _jspx_page_context, _jspx_push_body_count_form_005fform_005f0))
+            return true;
+          out.write("\r\n");
+          out.write("\t\t\t\t\t<label style=\"margin-left: 70px;\">Ngày đăng:</label>\r\n");
+          out.write("\t\t\t\t\t");
+          if (_jspx_meth_form_005finput_005f4(_jspx_th_form_005fform_005f0, _jspx_page_context, _jspx_push_body_count_form_005fform_005f0))
             return true;
           out.write("\r\n");
           out.write("\t\t\t\t</div>\r\n");
@@ -276,7 +324,7 @@ public final class admin_005fdangtin_jsp extends org.apache.jasper.runtime.HttpJ
       _jspx_th_form_005fform_005f0.doCatch(_jspx_exception);
     } finally {
       _jspx_th_form_005fform_005f0.doFinally();
-      _005fjspx_005ftagPool_005fform_005fform_0026_005fmodelAttribute_005fmethod_005faction.reuse(_jspx_th_form_005fform_005f0);
+      _005fjspx_005ftagPool_005fform_005fform_0026_005fmodelAttribute_005fmethod_005fclass_005faction.reuse(_jspx_th_form_005fform_005f0);
     }
     return false;
   }
@@ -289,18 +337,18 @@ public final class admin_005fdangtin_jsp extends org.apache.jasper.runtime.HttpJ
     org.springframework.web.servlet.tags.form.InputTag _jspx_th_form_005finput_005f0 = (org.springframework.web.servlet.tags.form.InputTag) _005fjspx_005ftagPool_005fform_005finput_0026_005fvalue_005ftype_005fstyle_005frequired_005fpath_005fname_005fnobody.get(org.springframework.web.servlet.tags.form.InputTag.class);
     _jspx_th_form_005finput_005f0.setPageContext(_jspx_page_context);
     _jspx_th_form_005finput_005f0.setParent((javax.servlet.jsp.tagext.Tag) _jspx_th_form_005fform_005f0);
-    // /WEB-INF/view/admin_dangtin.jsp(102,5) name = path type = null reqTime = true required = true fragment = false deferredValue = false expectedTypeName = null deferredMethod = false methodSignature = null
+    // /WEB-INF/view/admin_dangtin.jsp(143,5) name = path type = null reqTime = true required = true fragment = false deferredValue = false expectedTypeName = null deferredMethod = false methodSignature = null
     _jspx_th_form_005finput_005f0.setPath("title");
-    // /WEB-INF/view/admin_dangtin.jsp(102,5) null
+    // /WEB-INF/view/admin_dangtin.jsp(143,5) null
     _jspx_th_form_005finput_005f0.setDynamicAttribute(null, "type", new String("text"));
-    // /WEB-INF/view/admin_dangtin.jsp(102,5) null
+    // /WEB-INF/view/admin_dangtin.jsp(143,5) null
     _jspx_th_form_005finput_005f0.setDynamicAttribute(null, "name", new String("title"));
-    // /WEB-INF/view/admin_dangtin.jsp(102,5) null
+    // /WEB-INF/view/admin_dangtin.jsp(143,5) null
     _jspx_th_form_005finput_005f0.setDynamicAttribute(null, "value", new String(""));
-    // /WEB-INF/view/admin_dangtin.jsp(102,5) null
+    // /WEB-INF/view/admin_dangtin.jsp(143,5) null
     _jspx_th_form_005finput_005f0.setDynamicAttribute(null, "required", new String("required"));
-    // /WEB-INF/view/admin_dangtin.jsp(102,5) null
-    _jspx_th_form_005finput_005f0.setDynamicAttribute(null, "style", new String("width: 92%;"));
+    // /WEB-INF/view/admin_dangtin.jsp(143,5) null
+    _jspx_th_form_005finput_005f0.setDynamicAttribute(null, "style", new String("width: 90%;"));
     int[] _jspx_push_body_count_form_005finput_005f0 = new int[] { 0 };
     try {
       int _jspx_eval_form_005finput_005f0 = _jspx_th_form_005finput_005f0.doStartTag();
@@ -326,18 +374,18 @@ public final class admin_005fdangtin_jsp extends org.apache.jasper.runtime.HttpJ
     org.springframework.web.servlet.tags.form.InputTag _jspx_th_form_005finput_005f1 = (org.springframework.web.servlet.tags.form.InputTag) _005fjspx_005ftagPool_005fform_005finput_0026_005fvalue_005ftype_005fstyle_005frequired_005fpath_005fname_005fnobody.get(org.springframework.web.servlet.tags.form.InputTag.class);
     _jspx_th_form_005finput_005f1.setPageContext(_jspx_page_context);
     _jspx_th_form_005finput_005f1.setParent((javax.servlet.jsp.tagext.Tag) _jspx_th_form_005fform_005f0);
-    // /WEB-INF/view/admin_dangtin.jsp(105,5) name = path type = null reqTime = true required = true fragment = false deferredValue = false expectedTypeName = null deferredMethod = false methodSignature = null
-    _jspx_th_form_005finput_005f1.setPath("type");
-    // /WEB-INF/view/admin_dangtin.jsp(105,5) null
+    // /WEB-INF/view/admin_dangtin.jsp(146,5) name = path type = null reqTime = true required = true fragment = false deferredValue = false expectedTypeName = null deferredMethod = false methodSignature = null
+    _jspx_th_form_005finput_005f1.setPath("newsBrief");
+    // /WEB-INF/view/admin_dangtin.jsp(146,5) null
     _jspx_th_form_005finput_005f1.setDynamicAttribute(null, "type", new String("text"));
-    // /WEB-INF/view/admin_dangtin.jsp(105,5) null
-    _jspx_th_form_005finput_005f1.setDynamicAttribute(null, "name", new String("title"));
-    // /WEB-INF/view/admin_dangtin.jsp(105,5) null
+    // /WEB-INF/view/admin_dangtin.jsp(146,5) null
+    _jspx_th_form_005finput_005f1.setDynamicAttribute(null, "name", new String("newsBrief"));
+    // /WEB-INF/view/admin_dangtin.jsp(146,5) null
     _jspx_th_form_005finput_005f1.setDynamicAttribute(null, "value", new String(""));
-    // /WEB-INF/view/admin_dangtin.jsp(105,5) null
+    // /WEB-INF/view/admin_dangtin.jsp(146,5) null
     _jspx_th_form_005finput_005f1.setDynamicAttribute(null, "required", new String("required"));
-    // /WEB-INF/view/admin_dangtin.jsp(105,5) null
-    _jspx_th_form_005finput_005f1.setDynamicAttribute(null, "style", new String("width: 150px; margin-right: 70px;"));
+    // /WEB-INF/view/admin_dangtin.jsp(146,5) null
+    _jspx_th_form_005finput_005f1.setDynamicAttribute(null, "style", new String("width: 90%;margin-left:5px "));
     int[] _jspx_push_body_count_form_005finput_005f1 = new int[] { 0 };
     try {
       int _jspx_eval_form_005finput_005f1 = _jspx_th_form_005finput_005f1.doStartTag();
@@ -363,17 +411,17 @@ public final class admin_005fdangtin_jsp extends org.apache.jasper.runtime.HttpJ
     org.springframework.web.servlet.tags.form.InputTag _jspx_th_form_005finput_005f2 = (org.springframework.web.servlet.tags.form.InputTag) _005fjspx_005ftagPool_005fform_005finput_0026_005fvalue_005ftype_005fstyle_005frequired_005fpath_005fname_005fnobody.get(org.springframework.web.servlet.tags.form.InputTag.class);
     _jspx_th_form_005finput_005f2.setPageContext(_jspx_page_context);
     _jspx_th_form_005finput_005f2.setParent((javax.servlet.jsp.tagext.Tag) _jspx_th_form_005fform_005f0);
-    // /WEB-INF/view/admin_dangtin.jsp(108,5) name = path type = null reqTime = true required = true fragment = false deferredValue = false expectedTypeName = null deferredMethod = false methodSignature = null
-    _jspx_th_form_005finput_005f2.setPath("img");
-    // /WEB-INF/view/admin_dangtin.jsp(108,5) null
+    // /WEB-INF/view/admin_dangtin.jsp(149,5) name = path type = null reqTime = true required = true fragment = false deferredValue = false expectedTypeName = null deferredMethod = false methodSignature = null
+    _jspx_th_form_005finput_005f2.setPath("type");
+    // /WEB-INF/view/admin_dangtin.jsp(149,5) null
     _jspx_th_form_005finput_005f2.setDynamicAttribute(null, "type", new String("text"));
-    // /WEB-INF/view/admin_dangtin.jsp(108,5) null
-    _jspx_th_form_005finput_005f2.setDynamicAttribute(null, "name", new String("image"));
-    // /WEB-INF/view/admin_dangtin.jsp(108,5) null
+    // /WEB-INF/view/admin_dangtin.jsp(149,5) null
+    _jspx_th_form_005finput_005f2.setDynamicAttribute(null, "name", new String("type"));
+    // /WEB-INF/view/admin_dangtin.jsp(149,5) null
     _jspx_th_form_005finput_005f2.setDynamicAttribute(null, "value", new String(""));
-    // /WEB-INF/view/admin_dangtin.jsp(108,5) null
+    // /WEB-INF/view/admin_dangtin.jsp(149,5) null
     _jspx_th_form_005finput_005f2.setDynamicAttribute(null, "required", new String("required"));
-    // /WEB-INF/view/admin_dangtin.jsp(108,5) null
+    // /WEB-INF/view/admin_dangtin.jsp(149,5) null
     _jspx_th_form_005finput_005f2.setDynamicAttribute(null, "style", new String("width: 150px; margin-right: 70px;"));
     int[] _jspx_push_body_count_form_005finput_005f2 = new int[] { 0 };
     try {
@@ -397,23 +445,21 @@ public final class admin_005fdangtin_jsp extends org.apache.jasper.runtime.HttpJ
     PageContext pageContext = _jspx_page_context;
     JspWriter out = _jspx_page_context.getOut();
     //  form:input
-    org.springframework.web.servlet.tags.form.InputTag _jspx_th_form_005finput_005f3 = (org.springframework.web.servlet.tags.form.InputTag) _005fjspx_005ftagPool_005fform_005finput_0026_005fvalue_005ftype_005fstyle_005frequired_005fpath_005fname_005fid_005fnobody.get(org.springframework.web.servlet.tags.form.InputTag.class);
+    org.springframework.web.servlet.tags.form.InputTag _jspx_th_form_005finput_005f3 = (org.springframework.web.servlet.tags.form.InputTag) _005fjspx_005ftagPool_005fform_005finput_0026_005fvalue_005ftype_005fstyle_005frequired_005fpath_005fname_005fnobody.get(org.springframework.web.servlet.tags.form.InputTag.class);
     _jspx_th_form_005finput_005f3.setPageContext(_jspx_page_context);
     _jspx_th_form_005finput_005f3.setParent((javax.servlet.jsp.tagext.Tag) _jspx_th_form_005fform_005f0);
-    // /WEB-INF/view/admin_dangtin.jsp(111,5) name = path type = null reqTime = true required = true fragment = false deferredValue = false expectedTypeName = null deferredMethod = false methodSignature = null
-    _jspx_th_form_005finput_005f3.setPath("date");
-    // /WEB-INF/view/admin_dangtin.jsp(111,5) null
+    // /WEB-INF/view/admin_dangtin.jsp(152,5) name = path type = null reqTime = true required = true fragment = false deferredValue = false expectedTypeName = null deferredMethod = false methodSignature = null
+    _jspx_th_form_005finput_005f3.setPath("img");
+    // /WEB-INF/view/admin_dangtin.jsp(152,5) null
     _jspx_th_form_005finput_005f3.setDynamicAttribute(null, "type", new String("text"));
-    // /WEB-INF/view/admin_dangtin.jsp(111,5) null
+    // /WEB-INF/view/admin_dangtin.jsp(152,5) null
     _jspx_th_form_005finput_005f3.setDynamicAttribute(null, "name", new String("image"));
-    // /WEB-INF/view/admin_dangtin.jsp(111,5) null
+    // /WEB-INF/view/admin_dangtin.jsp(152,5) null
     _jspx_th_form_005finput_005f3.setDynamicAttribute(null, "value", new String(""));
-    // /WEB-INF/view/admin_dangtin.jsp(111,5) null
+    // /WEB-INF/view/admin_dangtin.jsp(152,5) null
     _jspx_th_form_005finput_005f3.setDynamicAttribute(null, "required", new String("required"));
-    // /WEB-INF/view/admin_dangtin.jsp(111,5) null
-    _jspx_th_form_005finput_005f3.setDynamicAttribute(null, "style", new String("width: 100px;"));
-    // /WEB-INF/view/admin_dangtin.jsp(111,5) name = id type = null reqTime = true required = false fragment = false deferredValue = false expectedTypeName = null deferredMethod = false methodSignature = null
-    _jspx_th_form_005finput_005f3.setId("datepicker");
+    // /WEB-INF/view/admin_dangtin.jsp(152,5) null
+    _jspx_th_form_005finput_005f3.setDynamicAttribute(null, "style", new String("width: 150px; margin-right: 70px;"));
     int[] _jspx_push_body_count_form_005finput_005f3 = new int[] { 0 };
     try {
       int _jspx_eval_form_005finput_005f3 = _jspx_th_form_005finput_005f3.doStartTag();
@@ -426,7 +472,46 @@ public final class admin_005fdangtin_jsp extends org.apache.jasper.runtime.HttpJ
       _jspx_th_form_005finput_005f3.doCatch(_jspx_exception);
     } finally {
       _jspx_th_form_005finput_005f3.doFinally();
-      _005fjspx_005ftagPool_005fform_005finput_0026_005fvalue_005ftype_005fstyle_005frequired_005fpath_005fname_005fid_005fnobody.reuse(_jspx_th_form_005finput_005f3);
+      _005fjspx_005ftagPool_005fform_005finput_0026_005fvalue_005ftype_005fstyle_005frequired_005fpath_005fname_005fnobody.reuse(_jspx_th_form_005finput_005f3);
+    }
+    return false;
+  }
+
+  private boolean _jspx_meth_form_005finput_005f4(javax.servlet.jsp.tagext.JspTag _jspx_th_form_005fform_005f0, PageContext _jspx_page_context, int[] _jspx_push_body_count_form_005fform_005f0)
+          throws Throwable {
+    PageContext pageContext = _jspx_page_context;
+    JspWriter out = _jspx_page_context.getOut();
+    //  form:input
+    org.springframework.web.servlet.tags.form.InputTag _jspx_th_form_005finput_005f4 = (org.springframework.web.servlet.tags.form.InputTag) _005fjspx_005ftagPool_005fform_005finput_0026_005fvalue_005ftype_005fstyle_005frequired_005fpath_005fname_005fid_005fnobody.get(org.springframework.web.servlet.tags.form.InputTag.class);
+    _jspx_th_form_005finput_005f4.setPageContext(_jspx_page_context);
+    _jspx_th_form_005finput_005f4.setParent((javax.servlet.jsp.tagext.Tag) _jspx_th_form_005fform_005f0);
+    // /WEB-INF/view/admin_dangtin.jsp(155,5) name = path type = null reqTime = true required = true fragment = false deferredValue = false expectedTypeName = null deferredMethod = false methodSignature = null
+    _jspx_th_form_005finput_005f4.setPath("date");
+    // /WEB-INF/view/admin_dangtin.jsp(155,5) null
+    _jspx_th_form_005finput_005f4.setDynamicAttribute(null, "type", new String("text"));
+    // /WEB-INF/view/admin_dangtin.jsp(155,5) null
+    _jspx_th_form_005finput_005f4.setDynamicAttribute(null, "name", new String("image"));
+    // /WEB-INF/view/admin_dangtin.jsp(155,5) null
+    _jspx_th_form_005finput_005f4.setDynamicAttribute(null, "value", new String(""));
+    // /WEB-INF/view/admin_dangtin.jsp(155,5) null
+    _jspx_th_form_005finput_005f4.setDynamicAttribute(null, "required", new String("required"));
+    // /WEB-INF/view/admin_dangtin.jsp(155,5) null
+    _jspx_th_form_005finput_005f4.setDynamicAttribute(null, "style", new String("width: 100px;"));
+    // /WEB-INF/view/admin_dangtin.jsp(155,5) name = id type = null reqTime = true required = false fragment = false deferredValue = false expectedTypeName = null deferredMethod = false methodSignature = null
+    _jspx_th_form_005finput_005f4.setId("datepicker");
+    int[] _jspx_push_body_count_form_005finput_005f4 = new int[] { 0 };
+    try {
+      int _jspx_eval_form_005finput_005f4 = _jspx_th_form_005finput_005f4.doStartTag();
+      if (_jspx_th_form_005finput_005f4.doEndTag() == javax.servlet.jsp.tagext.Tag.SKIP_PAGE) {
+        return true;
+      }
+    } catch (Throwable _jspx_exception) {
+      while (_jspx_push_body_count_form_005finput_005f4[0]-- > 0)
+        out = _jspx_page_context.popBody();
+      _jspx_th_form_005finput_005f4.doCatch(_jspx_exception);
+    } finally {
+      _jspx_th_form_005finput_005f4.doFinally();
+      _005fjspx_005ftagPool_005fform_005finput_0026_005fvalue_005ftype_005fstyle_005frequired_005fpath_005fname_005fid_005fnobody.reuse(_jspx_th_form_005finput_005f4);
     }
     return false;
   }
@@ -439,19 +524,19 @@ public final class admin_005fdangtin_jsp extends org.apache.jasper.runtime.HttpJ
     org.springframework.web.servlet.tags.form.TextareaTag _jspx_th_form_005ftextarea_005f0 = (org.springframework.web.servlet.tags.form.TextareaTag) _005fjspx_005ftagPool_005fform_005ftextarea_0026_005fstyle_005frows_005fpath_005fname_005fid_005fcols_005fclass_005fnobody.get(org.springframework.web.servlet.tags.form.TextareaTag.class);
     _jspx_th_form_005ftextarea_005f0.setPageContext(_jspx_page_context);
     _jspx_th_form_005ftextarea_005f0.setParent((javax.servlet.jsp.tagext.Tag) _jspx_th_form_005fform_005f0);
-    // /WEB-INF/view/admin_dangtin.jsp(115,4) name = path type = null reqTime = true required = true fragment = false deferredValue = false expectedTypeName = null deferredMethod = false methodSignature = null
+    // /WEB-INF/view/admin_dangtin.jsp(159,4) name = path type = null reqTime = true required = true fragment = false deferredValue = false expectedTypeName = null deferredMethod = false methodSignature = null
     _jspx_th_form_005ftextarea_005f0.setPath("content");
-    // /WEB-INF/view/admin_dangtin.jsp(115,4) null
+    // /WEB-INF/view/admin_dangtin.jsp(159,4) null
     _jspx_th_form_005ftextarea_005f0.setDynamicAttribute(null, "class", new String("ckeditor"));
-    // /WEB-INF/view/admin_dangtin.jsp(115,4) name = id type = null reqTime = true required = false fragment = false deferredValue = false expectedTypeName = null deferredMethod = false methodSignature = null
+    // /WEB-INF/view/admin_dangtin.jsp(159,4) name = id type = null reqTime = true required = false fragment = false deferredValue = false expectedTypeName = null deferredMethod = false methodSignature = null
     _jspx_th_form_005ftextarea_005f0.setId("editor1");
-    // /WEB-INF/view/admin_dangtin.jsp(115,4) null
+    // /WEB-INF/view/admin_dangtin.jsp(159,4) null
     _jspx_th_form_005ftextarea_005f0.setDynamicAttribute(null, "name", new String("editor1"));
-    // /WEB-INF/view/admin_dangtin.jsp(115,4) name = rows type = null reqTime = true required = false fragment = false deferredValue = false expectedTypeName = null deferredMethod = false methodSignature = null
+    // /WEB-INF/view/admin_dangtin.jsp(159,4) name = rows type = null reqTime = true required = false fragment = false deferredValue = false expectedTypeName = null deferredMethod = false methodSignature = null
     _jspx_th_form_005ftextarea_005f0.setRows("33");
-    // /WEB-INF/view/admin_dangtin.jsp(115,4) name = cols type = null reqTime = true required = false fragment = false deferredValue = false expectedTypeName = null deferredMethod = false methodSignature = null
+    // /WEB-INF/view/admin_dangtin.jsp(159,4) name = cols type = null reqTime = true required = false fragment = false deferredValue = false expectedTypeName = null deferredMethod = false methodSignature = null
     _jspx_th_form_005ftextarea_005f0.setCols("136");
-    // /WEB-INF/view/admin_dangtin.jsp(115,4) null
+    // /WEB-INF/view/admin_dangtin.jsp(159,4) null
     _jspx_th_form_005ftextarea_005f0.setDynamicAttribute(null, "style", new String("width: 100%; height: 100%;"));
     int[] _jspx_push_body_count_form_005ftextarea_005f0 = new int[] { 0 };
     try {
